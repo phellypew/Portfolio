@@ -277,6 +277,88 @@ body {
     text-align: center;
 }
 
+/* Estilo da Seção de Skills */
+#secao-skills {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.skill-item i {
+    font-size: 4rem; /* Tamanho dos ícones */
+    color: #333; /* Cor padrão dos ícones */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-item span {
+    font-size: 1.5rem;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Cores específicas para cada ícone */
+.skill-item .fa-html5 {
+    color: #e34c26; /* Cor do ícone HTML */
+}
+
+.skill-item .fa-css3-alt {
+    color: #264de4; /* Cor do ícone CSS */
+}
+
+.skill-item .fa-js {
+    color: #f0db4f; /* Cor do ícone JavaScript */
+}
+
+/* Efeito de hover */
+.skill-item:hover {
+    transform: translateY(-10px);
+}
+
+.skill-item:hover i {
+    transform: scale(1.2);
+}
+
+/* Estilo da Seção de Skills com Fundo Diferente */
+.secao-skills-com-fundo {
+    background-color: #f4f4f4; /* Cor de fundo cinza */
+    padding: 50px 20px; /* Espaçamento interno */
+    margin-top: 40px; /* Espaço acima da seção */
+    margin-bottom: 40px; /* Espaço abaixo da seção */
+}
+
+/* Ajuste para o título da seção */
+#SkillssId {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333; /* Cor do título */
+}
+
+/* Ajuste para o container dos ícones */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
 /* Rodapé */
