@@ -188,6 +188,97 @@ body {
     margin: 0 auto;
 }
 
+/* Seção de Projetos */
+
+#ProjetosId {
+    
+    text-align: center;
+    font-size: 50px;
+    margin: 50px;
+}
+
+@media (max-width: 768px) {
+    #ProjetosId {
+        font-size: 2rem; /* Tamanho menor para tablets e celulares */
+    }
+}
+
+@media (max-width: 480px) {
+    #ProjetosId {
+        font-size: 1.8rem; /* Tamanho ainda menor para celulares */
+    }
+}
+/* Estilo do Card de Projetos */
+
+.cards-container {
+    display: flex; /* Ativa o Flexbox */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 30px; /* Espaço entre os cards */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.Card {
+    flex: 1 1 300px; /* Cresce, encolhe e tem uma base de 300px */
+    max-width: 300px; /* Largura máxima do card */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Card2 {
+    flex: 1 1 300px; /* Cresce, encolhe e tem uma base de 300px */
+    max-width: 300px; /* Largura máxima do card */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Card2 img {
+    width: 100%; /* Largura da imagem */
+    height: 400px; /* Altura fixa da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras abaixo da imagem */
+}
+
+
+.Card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo da Imagem dentro do Card */
+.Card img {
+    width: 100%; /* Largura da imagem */
+    height: 350px; /* Altura fixa da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras abaixo da imagem */
+}
+
+/* Conteúdo do Card (Título e Descrição) */
+.Card h3 {
+    font-size: 1.25rem;
+    margin: 15px 0 10px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.Card p {
+    font-size: 1rem;
+    color: #666;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+
 /* Rodapé */
 footer {
     background-color: #333;
