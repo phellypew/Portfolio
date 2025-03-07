@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth; /* Ativa a rolagem suave */
+}
 body {
     font-family: 'phellype', sans-serif;
     line-height: 1.6;
@@ -189,7 +192,6 @@ body {
 }
 
 /* Seção de Projetos */
-
 #ProjetosId {
     
     text-align: center;
@@ -277,11 +279,31 @@ body {
     text-align: center;
 }
 
-/* Estilo da Seção de Skills */
+/* Estilo da Seção de Skills com Fundo Cinza */
 #secao-skills {
+    background-color: #f8f9fa; /* Cor de fundo cinza claro */
+    padding: 120px 0; /* Padding vertical aumentado, sem padding lateral */
     text-align: center;
-    padding: 50px 20px;
-    background-color: #ffffff;
+    margin-top: 60px; /* Espaço acima da seção */
+    margin-bottom: 60px; /* Espaço abaixo da seção */
+    width: 100%; /* Garante que a seção ocupe 100% da largura */
+}
+
+#SkillssId {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333; /* Cor do título */
+    position: relative;
+    display: inline-block;
+}
+
+#SkillssId::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: black; /* Linha azul abaixo do título */
+    margin: 10px auto 0;
 }
 
 .skills-container {
@@ -289,7 +311,9 @@ body {
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
-    margin-top: 30px;
+    max-width: 1200px; /* Largura máxima do conteúdo interno */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 0 20px; /* Adiciona um pouco de padding lateral para evitar que o conteúdo encoste nas bordas */
 }
 
 .skill-item {
@@ -298,11 +322,12 @@ body {
     align-items: center;
     gap: 10px;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    padding: 5px; /* Espaçamento interno para os ícones e textos */
 }
 
 .skill-item i {
-    font-size: 4rem; /* Tamanho dos ícones */
-    color: #333; /* Cor padrão dos ícones */
+    font-size: 4rem;
+    color: #333;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -314,15 +339,15 @@ body {
 
 /* Cores específicas para cada ícone */
 .skill-item .fa-html5 {
-    color: #e34c26; /* Cor do ícone HTML */
+    color: black; /* Cor do ícone HTML */
 }
 
 .skill-item .fa-css3-alt {
-    color: #264de4; /* Cor do ícone CSS */
+    color: black; /* Cor do ícone CSS */
 }
 
 .skill-item .fa-js {
-    color: #f0db4f; /* Cor do ícone JavaScript */
+    color: black; /* Cor do ícone JavaScript */
 }
 
 /* Efeito de hover */
@@ -332,32 +357,6 @@ body {
 
 .skill-item:hover i {
     transform: scale(1.2);
-}
-
-/* Estilo da Seção de Skills com Fundo Diferente */
-.secao-skills-com-fundo {
-    background-color: #f4f4f4; /* Cor de fundo cinza */
-    padding: 50px 20px; /* Espaçamento interno */
-    margin-top: 40px; /* Espaço acima da seção */
-    margin-bottom: 40px; /* Espaço abaixo da seção */
-}
-
-/* Ajuste para o título da seção */
-#SkillssId {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #333; /* Cor do título */
-}
-
-/* Ajuste para o container dos ícones */
-.skills-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 

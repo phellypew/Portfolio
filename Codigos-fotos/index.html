@@ -6,6 +6,11 @@
     <title>Matheus Souza Portfólio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth; /* Ativa a rolagem suave */
+        }
+    </style>
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -15,128 +20,84 @@
                 <a href="#">Matheus Souza</a>
             </div>
             <div class="nav-direita">
-                <a href="#secao-sobre">Sobre</a>
+                <a href="#minha-foto">Sobre</a> <!-- Link para a foto -->
                 <a href="#secao-projeto">Projetos</a>
                 <a href="#secao-skills">Skills</a>
-                <a href="#secao-feedback">Feedback</a>
+                <a href="#rodape">Feedback</a> <!-- Link para o rodapé -->
             </div>
         </nav>
     </header>
 
     <!-- Seção Inicial -->
-<section class="secao-inicial">
-    <div class="centralizado">
-        <!-- Foto -->
-        <div class="foto-container">
-            <img class="Foto" src="./Eu.jpg" alt="Minha Foto">
-        </div>
-
-        <!-- Texto de Introdução -->
-        <h2 class="ola-muito-prazer">Olá, muito prazer!</h2>
-        <p class="intro-text">
-            Olá! Meu nome é Matheus Souza, sou estudante de Análise e Desenvolvimento de Sistemas e futuro engenheiro de software.
-        </p>
-
-        <!-- Ícones das Redes Sociais -->
-        <div class="social-medias">
-            <a href="https://github.com/phellype" class="social-link" target="_blank" title="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://linkedin.com/in/matheus-phellype-souza-a20779313/" class="social-link" target="_blank" title="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.youtube.com/@Ophellype" class="social-link" target="_blank" title="YouTube">
-                <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://instagram.com/matheusphellype_" class="social-link" target="_blank" title="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </div>
-    </div>
-</section>
-
-    <!-- Segunda Seção (com outra cor de fundo) -->
-    <section class="secao-conteudo">
-        
-
-        <!-- Seção Projetos -->
-        <section id="secao-projeto" class="section">
-            <h2 id="ProjetosId">Projetos</h2>
-            <div class="cards-container">
-                <!--Card 1-->
-                <div class="Card">
-                    <img src="./Foto projeto.png" alt="Projeto 1">
-                    <h3>Projeto 1</h3>
-                    <p>Este é meu primeiro Portfólio, criei utilizando códigos básicos de HTML e CSS.</p>
-
-                </div>
-                
-                <div class2="cards-container">
-                    <!--Card 2-->
-                    <div class="Card">
-                        <img src="./Coming Soon.jpg" alt="Projeto 2">
-                        <h3>Projeto 2</h3>
-                        <p>Em breve estarei postando meu novo projeto aqui no portfolio! </p>
-    
-                    </div>
+    <section class="secao-inicial">
+        <div class="centralizado">
+            <!-- Foto -->
+            <div id="minha-foto" class="foto-container"> <!-- ID adicionado aqui -->
+                <img class="Foto" src="./Eu.jpg" alt="Minha Foto">
             </div>
-        </section>
 
-<!-- Seção Skills -->
-<section id="secao-skills" class="section secao-skills-com-fundo">
-    <h2 id="SkillssId">Skills</h2>
-    <div class="skills-container">
-        <div class="skill-item">
-            <i class="fab fa-html5"></i>
-            <span>HTML</span>
+            <!-- Texto de Introdução -->
+            <h2 class="ola-muito-prazer">Olá, muito prazer!</h2>
+            <p class="intro-text">
+                Olá! Meu nome é Matheus Souza, sou estudante de Análise e Desenvolvimento de Sistemas e futuro engenheiro de software.
+            </p>
+
+            <!-- Ícones das Redes Sociais -->
+            <div class="social-medias">
+                <a href="https://github.com/phellype" class="social-link" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/matheus-phellype-souza-a20779313/" class="social-link" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/@Ophellype" class="social-link" target="_blank" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://instagram.com/matheusphellype_" class="social-link" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
         </div>
-        <div class="skill-item">
-            <i class="fab fa-css3-alt"></i>
-            <span>CSS</span>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="secao-projeto" class="section">
+        <h2 id="ProjetosId">Projetos</h2>
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="Card">
+                <img src="./Foto projeto.png" alt="Projeto 1">
+                <h3>Projeto 1</h3>
+                <p>Este é meu primeiro Portfólio, criei utilizando códigos básicos de HTML e CSS.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="Card">
+                <img src="./Coming Soon.jpg" alt="Projeto 2">
+                <h3>Projeto 2</h3>
+                <p>Em breve estarei postando meu novo projeto aqui no portfolio!</p>
+            </div>
         </div>
-        <div class="skill-item">
-            <i class="fab fa-js"></i>
-            <span>JavaScript</span>
+    </section>
+
+    <!-- Seção Skills -->
+    <section id="secao-skills" class="section secao-skills-com-fundo">
+        <h2 id="SkillssId">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <i class="fab fa-html5"></i>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-js"></i>
+            </div>
         </div>
-    </div>
-</section>
-
-
-
-        <!-- Seção Habilidades e Tecnologias -->
-        <section id="habilidades" class="section">
-            <h2 id="HabeTec">Habilidades e tecnologias</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tecnologia</th>
-                        <th>Nível</th>
-                        <th>Descrição</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td>Iniciante</td>
-                        <td>Capaz de construir estruturas de páginas web semânticas e responsivas.</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>Intermediário</td>
-                        <td>Experiência com flexbox, grid e animações CSS.</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Básico</td>
-                        <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
     </section>
 
     <!-- Rodapé -->
-    <footer>
+    <footer id="rodape"> <!-- ID adicionado aqui -->
         <p>Direitos reservado a Matheus Souza</p>
         <section id="contato">
             <h2 id="ContatoId">Contato</h2>
