@@ -126,7 +126,7 @@ body {
 
 .intro-text {
     font-size: 1.2rem; /* Tamanho do texto */
-    color: #543; /* Cor do texto */
+    color: #555; /* Cor do texto */
     max-width: 600px; /* Largura máxima do texto */
     margin: 0 auto 20px auto; /* Centraliza e adiciona espaço abaixo */
     text-align: center; /* Centraliza o texto */
